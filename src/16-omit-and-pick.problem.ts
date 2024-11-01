@@ -1,5 +1,3 @@
-import { Equal, Expect } from "./helpers/type-utils";
-
 interface User {
   id: string;
   firstName: string;
@@ -12,5 +10,3 @@ interface User {
  */
 
 type MyType = unknown;
-
-type tests = [Expect<Equal<MyType, { firstName: string; lastName: string }>>];

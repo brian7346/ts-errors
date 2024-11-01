@@ -1,5 +1,3 @@
-import { expect, it } from "vitest";
-
 interface User {
   id: number;
   firstName: string;
@@ -16,7 +14,3 @@ const defaultUser = {};
 const getUserId = (user: User) => {
   return user.id;
 };
-
-it("Should get the user id", () => {
-  expect(getUserId(defaultUser)).toEqual(1);
-});

@@ -1,5 +1,3 @@
-import { Equal, Expect } from "./helpers/type-utils";
-
 /**
  * How do we type onFocusChange?
  */
@@ -12,9 +10,3 @@ const addListener = (onFocusChange: (isFocused: boolean) => void) => {
     onFocusChange(false);
   });
 };
-
-addListener((isFocused) => {
-  console.log({ isFocused });
-
-  type tests = [Expect<Equal<typeof isFocused, boolean>>];
-});

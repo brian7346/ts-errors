@@ -1,17 +1,18 @@
-const createCache = () => {
+// Создайте типизированный кэш для хранения информации о товарах
+const createProductCache = () => {
   const cache = {};
 
-  const add = (id: string, value: string) => {
-    cache[id] = value;
+  const addProduct = (articleId: string, productInfo: string) => {
+    cache[articleId] = productInfo;
   };
 
-  const remove = (id: string) => {
-    delete cache[id];
+  const removeProduct = (articleId: string) => {
+    delete cache[articleId];
   };
 
   return {
     cache,
-    add,
-    remove,
+    addProduct,
+    removeProduct,
   };
 };

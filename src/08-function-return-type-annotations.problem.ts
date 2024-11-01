@@ -1,20 +1,22 @@
-interface User {
+interface BankAccount {
   id: number;
-  firstName: string;
-  lastName: string;
-  role: "admin" | "user" | "super-admin";
-  posts: Array<Post>;
+  owner: string;
+  balance: number;
+  currency: "RUB" | "USD" | "EUR";
+  transactions: Transaction[];
 }
 
-interface Post {
+interface Transaction {
   id: number;
-  title: string;
+  amount: number;
+  type: "пополнение" | "списание";
+  date: string;
 }
 
 /**
- * How do we ensure that makeUser ALWAYS
- * returns a user?
+ * Как обеспечить, чтобы функция всегда возвращала
+ * объект типа BankAccount?
  */
-const makeUser = () => {
+const createBankAccount = () => {
   return {};
 };

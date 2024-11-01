@@ -1,16 +1,17 @@
-interface User {
+interface Product {
   id: number;
-  firstName: string;
-  lastName: string;
-  isAdmin: boolean;
+  name: string;
+  price: number;
+  inStock: boolean;
+  category: string;
 }
 
 /**
- * How do we ensure that defaultUser is of type User
- * at THIS LINE - not further down in the code?
+ * Как правильно типизировать defaultProduct,
+ * чтобы он соответствовал интерфейсу Product?
  */
-const defaultUser = {};
+const defaultProduct = {};
 
-const getUserId = (user: User) => {
-  return user.id;
+const getProductPrice = (product: Product) => {
+  return product.price;
 };

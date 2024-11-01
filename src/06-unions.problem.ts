@@ -1,20 +1,21 @@
-interface User {
+interface Employee {
   id: number;
   firstName: string;
   lastName: string;
   /**
-   * How do we ensure that role is only one of:
-   * - 'admin'
-   * - 'user'
-   * - 'super-admin'
+   * Как обеспечить, чтобы должность могла быть только одной из:
+   * - 'менеджер'
+   * - 'разработчик'
+   * - 'дизайнер'
+   * - 'аналитик'
    */
-  role: string;
+  position: string;
 }
 
-export const defaultUser: User = {
+export const newEmployee: Employee = {
   id: 1,
-  firstName: "Matt",
-  lastName: "Pocock",
+  firstName: "Анна",
+  lastName: "Иванова",
   // @ts-expect-error
-  role: "I_SHOULD_NOT_BE_ALLOWED",
+  position: "неправильная_должность",
 };

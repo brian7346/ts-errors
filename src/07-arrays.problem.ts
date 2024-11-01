@@ -1,29 +1,33 @@
-interface User {
+interface Order {
   id: number;
-  firstName: string;
-  lastName: string;
-  role: "admin" | "user" | "super-admin";
-  posts: Post;
+  clientName: string;
+  items: OrderItem;
+  status: "новый" | "в_обработке" | "доставляется" | "выполнен";
 }
 
-interface Post {
+interface OrderItem {
   id: number;
-  title: string;
+  name: string;
+  quantity: number;
+  price: number;
 }
 
-export const defaultUser: User = {
+export const sampleOrder: Order = {
   id: 1,
-  firstName: "Matt",
-  lastName: "Pocock",
-  role: "admin",
-  posts: [
+  clientName: "Петров Иван",
+  status: "новый",
+  items: [
     {
       id: 1,
-      title: "How I eat so much cheese",
+      name: "Ноутбук",
+      quantity: 1,
+      price: 69990
     },
     {
       id: 2,
-      title: "Why I don't eat more vegetables",
-    },
-  ],
+      name: "Мышь",
+      quantity: 1,
+      price: 1990
+    }
+  ]
 };

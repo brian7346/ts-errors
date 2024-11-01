@@ -1,22 +1,28 @@
 /**
- * Here, the id property is shared between all three
- * interfaces. Can you find a way to refactor this to
- * make it more DRY?
+ * У всех сущностей есть общие поля.
+ * Как избежать дублирования и вынести их в общий интерфейс?
  */
 
-interface User {
+interface Client {
   id: string;
-  firstName: string;
-  lastName: string;
+  createdAt: Date;
+  updatedAt: Date;
+  name: string;
+  email: string;
 }
 
-interface Post {
+interface Project {
   id: string;
+  createdAt: Date;
+  updatedAt: Date;
   title: string;
-  body: string;
+  budget: number;
 }
 
-interface Comment {
+interface Task {
   id: string;
-  comment: string;
+  createdAt: Date;
+  updatedAt: Date;
+  description: string;
+  deadline: Date;
 }

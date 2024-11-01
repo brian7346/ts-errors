@@ -1,34 +1,26 @@
-interface User {
+interface Company {
   id: string;
-  firstName: string;
-  lastName: string;
+  name: string;
+  address: string;
 }
 
-interface Post {
-  id: string;
-  title: string;
-  body: string;
+interface TaxInfo {
+  inn: string;
+  kpp: string;
+  ogrn: string;
 }
 
 /**
- * How do we type this return statement so it's both
- * User AND { posts: Post[] }
+ * Создайте тип, который объединяет информацию о компании
+ * и её налоговых данных
  */
-export const getDefaultUserAndPosts = (): unknown => {
+export const getCompanyInfo = (): unknown => {
   return {
     id: "1",
-    firstName: "Matt",
-    lastName: "Pocock",
-    posts: [
-      {
-        id: "1",
-        title: "How I eat so much cheese",
-        body: "It's pretty edam difficult",
-      },
-    ],
+    name: "ООО Рога и Копыта",
+    address: "ул. Пушкина, д. Колотушкина",
+    inn: "7712345678",
+    kpp: "771001001",
+    ogrn: "1234567890123",
   };
 };
-
-const userAndPosts = getDefaultUserAndPosts();
-
-console.log(userAndPosts.posts[0]);

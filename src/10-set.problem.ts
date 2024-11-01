@@ -1,4 +1,5 @@
-const guitarists = new Set();
+// Создайте типизированный Set для хранения номеров телефонов
+const phoneNumbers = new Set();
 
-guitarists.add("Jimi Hendrix");
-guitarists.add("Eric Clapton");
+phoneNumbers.add("+7(999)123-45-67");
+phoneNumbers.add("+7(888)765-43-21");

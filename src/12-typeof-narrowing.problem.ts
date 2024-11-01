@@ -1,1 +1,5 @@
-const coerceAmount = (amount: number | { amount: number }) => {};
+// Создайте функцию для обработки платежа, который может быть передан
+// как числом, так и объектом с суммой
+const processPayment = (payment: number | { sum: number }) => {
+  // Добавьте типизацию и логику обработки
+};

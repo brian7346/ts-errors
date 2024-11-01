@@ -1,16 +1,13 @@
-interface LukeSkywalker {
-  name: string;
-  height: string;
-  mass: string;
-  hair_color: string;
-  skin_color: string;
-  eye_color: string;
-  birth_year: string;
-  gender: string;
+interface WeatherData {
+  temperature: number;
+  humidity: number;
+  pressure: number;
+  windSpeed: number;
+  description: string;
 }
 
-export const fetchLukeSkywalker = async (): LukeSkywalker => {
-  const data = await fetch("https://swapi.dev/api/people/1").then((res) => {
+export const fetchMoscowWeather = async (): WeatherData => {
+  const data = await fetch("https://api.weather.example/moscow").then((res) => {
     return res.json();
   });
 

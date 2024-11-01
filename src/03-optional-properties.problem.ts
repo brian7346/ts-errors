@@ -1,6 +1,7 @@
-export const getName = (params: { first: string; last: string }) => {
-  if (params.last) {
-    return `${params.first} ${params.last}`;
+// Создайте функцию для форматирования адреса, где номер квартиры опционален
+export const formatAddress = (params: { street: string; house: string; apartment: string }) => {
+  if (params.apartment) {
+    return `ул. ${params.street}, д. ${params.house}, кв. ${params.apartment}`;
   }
-  return params.first;
+  return `ул. ${params.street}, д. ${params.house}`;
 };

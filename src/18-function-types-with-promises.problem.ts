@@ -1,16 +1,20 @@
-interface User {
+interface OrderDetails {
   id: string;
-  firstName: string;
-  lastName: string;
+  items: Array<{
+    productId: string;
+    quantity: number;
+  }>;
+  deliveryAddress: string;
+  totalAmount: number;
 }
 
-const createThenGetUser = async (
-  createUser: unknown,
-  getUser: unknown,
-): Promise<User> => {
-  const userId: string = await createUser();
-
-  const user = await getUser(userId);
-
-  return user;
+// Создайте типизированную функцию для создания заказа
+// и получения его деталей
+const processOrder = async (
+  createOrder: unknown,
+  getOrderDetails: unknown,
+): Promise<OrderDetails> => {
+  const orderId: string = await createOrder();
+  const orderDetails = await getOrderDetails(orderId);
+  return orderDetails;
 };

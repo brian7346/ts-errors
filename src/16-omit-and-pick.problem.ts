@@ -1,12 +1,19 @@
-interface User {
+interface Employee {
   id: string;
   firstName: string;
   lastName: string;
+  position: string;
+  department: string;
+  salary: number;
+  bankDetails: {
+    accountNumber: string;
+    bik: string;
+  };
 }
 
 /**
- * How do we create a new object type with _only_ the
- * firstName and lastName properties of User?
+ * Создайте тип PublicEmployeeInfo, который содержит только
+ * публичную информацию о сотруднике (без банковских данных и зарплаты)
  */
 
-type MyType = unknown;
+type PublicEmployeeInfo = unknown;

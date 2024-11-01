@@ -1,12 +1,9 @@
 /**
- * How do we type onFocusChange?
+ * Создайте типизированную функцию для отслеживания 
+ * изменений корзины интернет-магазина
  */
-const addListener = (onFocusChange: unknown) => {
-  window.addEventListener("focus", () => {
-    onFocusChange(true);
-  });
-
-  window.addEventListener("blur", () => {
-    onFocusChange(false);
+const addCartListener = (onCartChange: unknown) => {
+  document.addEventListener("cartUpdate", (e: CustomEvent) => {
+    onCartChange(e.detail.items, e.detail.totalPrice);
   });
 };

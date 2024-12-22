@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare": "tt-cli prepare-stackblitz",
-    "prepare-2": "generate-type-checks",
+    "prepare-2": "tt-cli prepare-stackblitz",
+    "prepare": "generate-type-checks",
     "check-types---1": "ts-check 01-number.problem.ts",
     "e-01": "tt-cli run 01",
     "s-01": "tt-cli run 01 --solution",

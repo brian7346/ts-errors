@@ -1,7 +1,15 @@
-// Создайте функцию для форматирования адреса, где номер квартиры опционален
-export const formatAddress = (params: { street: string; house: string; apartment: string }) => {
-  if (params.apartment) {
-    return `ул. ${params.street}, д. ${params.house}, кв. ${params.apartment}`;
+export const printFullName = (params) => {
+  if (params.middleName) {
+    return `${params.firstName} ${params.middleName} ${params.lastName}`;
   }
-  return `ул. ${params.street}, д. ${params.house}`;
+  return `${params.firstName} ${params.lastName}`;
 };
+
+printFullName({ firstName: "John", lastName: "Doe" });
+printFullName({ firstName: "John", lastName: "Doe", middleName: "Smith" });
+
+// @ts-expect-error
+printFullName({ firstName: "John", lastName: "Doe", middleName: 30 });
+
+// @ts-expect-error
+printFullName({ firstName: "John", middleName: "Smith" });

@@ -1,8 +1,12 @@
-// Создайте функцию для приветствия пользователя, 
-// где отчество является опциональным параметром
-export const formatGreeting = (firstName: string, lastName: string, middleName: string) => {
-  if (middleName) {
-    return `Здравствуйте, ${lastName} ${firstName} ${middleName}!`;
+export const printFullName = (firstName, lastName) => {
+  if (lastName) {
+    return `Здравствуйте, ${lastName} ${firstName}!`;
   }
-  return `Здравствуйте, ${lastName} ${firstName}!`;
+  return `Здравствуйте, ${firstName}!`;
 };
+
+printFullName("John", "Doe");
+printFullName("John");
+
+// @ts-expect-error
+printFullName("John", "Doe", 30);

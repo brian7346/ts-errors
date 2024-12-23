@@ -668,10 +668,10 @@ ts-node@^10.0.0:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-ts-type-check-cli@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ts-type-check-cli/-/ts-type-check-cli-2.1.0.tgz#304efbf009cb8aa93e7d4f7d059d034036541e1c"
-  integrity sha512-nlknwKwezn+ZCJs+95KrCZqHprqoXHbUyg0ULxBBn5yq31VsdtxPa65G9Wmbbq4AuDWuvQYnCX76A0Kf3ySHVQ==
+ts-type-check-cli@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/ts-type-check-cli/-/ts-type-check-cli-2.1.5.tgz#bb881bcda1ce564048a9f14a6987bd1831c2895e"
+  integrity sha512-dZ7k5nn9ksCxRlNAti1wmIN2rZllDjVDEFBjkbVrnSyHjZDPVTCYUmWCexqyT5ZLVLnHBnVFrx+yKunZIUfKvQ==
   dependencies:
     "@types/node" "^20.0.0"
     chalk "^4.1.2"

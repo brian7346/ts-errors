@@ -369,6 +369,13 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+chokidar@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-4.0.3.tgz#7be37a4c03c9aee1ecfe862a4a23b2c70c205d30"
+  integrity sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==
+  dependencies:
+    readdirp "^4.0.1"
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
@@ -566,6 +573,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+readdirp@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-4.0.2.tgz#388fccb8b75665da3abffe2d8f8ed59fe74c230a"
+  integrity sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==
+
 readdirp@~3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.6.0.tgz#74a370bd857116e245b29cc97340cd431a02a6c7"
@@ -656,13 +668,14 @@ ts-node@^10.0.0:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-ts-type-check-cli@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/ts-type-check-cli/-/ts-type-check-cli-2.0.2.tgz#fed20edd92d4e9c7389b0ea7ebe7a0d61933783a"
-  integrity sha512-SOkpZoBXHJN90I/+rnNMvk84hl7HydDCRIVP5ZTzpkmV3mee1SLPOHLJGJxjV0dWfp3AYSA9BMTq/wrfsL6rIA==
+ts-type-check-cli@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ts-type-check-cli/-/ts-type-check-cli-2.1.0.tgz#304efbf009cb8aa93e7d4f7d059d034036541e1c"
+  integrity sha512-nlknwKwezn+ZCJs+95KrCZqHprqoXHbUyg0ULxBBn5yq31VsdtxPa65G9Wmbbq4AuDWuvQYnCX76A0Kf3ySHVQ==
   dependencies:
     "@types/node" "^20.0.0"
     chalk "^4.1.2"
+    chokidar "^4.0.3"
     commander "^10.0.0"
     ts-node "^10.0.0"
     typescript "^5.0.0"

@@ -70,6 +70,6 @@
     "vite": "^5.4.1"
   },
   "dependencies": {
-    "ts-type-check-cli": "2.1.5"
+    "ts-type-check-cli": "2.1.6"
   }
 }

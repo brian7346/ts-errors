@@ -4,13 +4,36 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare": "generate-type-checks"
+    "prepare": "generate-type-checks",
+    "generate": "generate-metadata",
+    "check-types-01": "ts-check 01-number-string.problem.ts",
+    "check-types-02": "ts-check 02-array-type.problem.ts",
+    "check-types-03": "ts-check 03-object-type.problem.ts",
+    "check-types-04": "ts-check 04-function-param.problem.ts",
+    "check-types-05": "ts-check 05-union-type.problem.ts",
+    "check-types-06": "ts-check 06-optional-property.problem.ts",
+    "check-types-07": "ts-check 07-readonly.problem.ts",
+    "check-types-08": "ts-check 08-tuple.problem.ts",
+    "check-types-09": "ts-check 09-enum.problem.ts",
+    "check-types-10": "ts-check 10-generics.problem.ts",
+    "check-types-11": "ts-check 11-interface-extends.problem.ts",
+    "check-types-12": "ts-check 12-function-overload.problem.ts",
+    "check-types-13": "ts-check 13-mapped-types.problem.ts",
+    "check-types-14": "ts-check 14-conditional-types.problem.ts",
+    "check-types-15": "ts-check 15-index-signatures.problem.ts",
+    "check-types-16": "ts-check 16-utility-types.problem.ts",
+    "check-types-17": "ts-check 17-type-narrowing.problem.ts",
+    "check-types-18": "ts-check 18-keyof.problem.ts",
+    "check-types-19": "ts-check 19-type-assertion.problem.ts",
+    "check-types-20": "ts-check 20-generic-constraints.problem.ts",
+    "check-types": "npm-run-all check-types-*"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "topic-metadata-generate": "^1.0.2",
     "ts-type-check-cli": "2.1.6"
   }
 }

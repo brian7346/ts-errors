@@ -1,0 +1,130 @@
+{
+  "problems": [
+    {
+      "id": "01-number-string.problem.ts",
+      "title": "Числа и строки",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "02-array-type.problem.ts",
+      "title": "Типы массивов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "03-object-type.problem.ts",
+      "title": "Типы объектов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "04-function-param.problem.ts",
+      "title": "Параметры функций",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "05-union-type.problem.ts",
+      "title": "Объединение типов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "06-optional-property.problem.ts",
+      "title": "Опциональные свойства",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "07-readonly.problem.ts",
+      "title": "Только для чтения",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "08-tuple.problem.ts",
+      "title": "Кортежи",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "09-enum.problem.ts",
+      "title": "Перечисления",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "10-generics.problem.ts",
+      "title": "Дженерики",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "11-interface-extends.problem.ts",
+      "title": "Наследование интерфейсов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "12-function-overload.problem.ts",
+      "title": "Перегрузка функций",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "13-mapped-types.problem.ts",
+      "title": "Сопоставленные типы",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "14-conditional-types.problem.ts",
+      "title": "Условные типы",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "15-index-signatures.problem.ts",
+      "title": "Индексные подписи",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "16-utility-types.problem.ts",
+      "title": "Утилитные типы",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "17-type-narrowing.problem.ts",
+      "title": "Сужение типов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "18-keyof.problem.ts",
+      "title": "Оператор keyof",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "19-type-assertion.problem.ts",
+      "title": "Утверждение типов",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "20-generic-constraints.problem.ts",
+      "title": "Ограничения дженериков",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    },
+    {
+      "id": "vite-env.d.ts",
+      "title": "Окружение Vite",
+      "descriptionVideoId": "",
+      "solutionVideoId": ""
+    }
+  ]
+}
